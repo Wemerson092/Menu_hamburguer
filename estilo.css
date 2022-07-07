@@ -1,0 +1,74 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.abreHam {
+    border: 0;
+    border-radius: 4px;
+    background-color: rgb(219, 77, 77);
+    margin: 8px;
+    padding: 8px;  
+    cursor: pointer;
+}
+
+.abreHam i {
+    color: #fff;
+}
+
+.principal {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.nav {
+    text-align: center;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+.principal a {
+    text-decoration: none;    
+    display: block;
+    font-size: 34px;
+    color: rgb(148, 147, 147);
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.nav a:hover, a:focus {
+    color: #fff;
+}
+
+.principal .xizinho {
+    position: absolute;
+    font-size: 65px;
+    right: 45px;
+    top: 0;
+    padding: 0;
+}   
+
+@media screen and (max-width: 450px){
+    .principal a { 
+        font-size: 25px;
+    }
+
+    .principal .xizinho {
+        font-size: 35px;
+        top: 30px;
+        right: 45px;
+    }
+
+}
